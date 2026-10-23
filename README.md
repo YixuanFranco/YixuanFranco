@@ -1,4 +1,4 @@
-<img src="assets/header.svg" width="100%" alt="Yixuan · 厨娘界元老, 书呆界新人 · 用更懒的方式过更好的人生">
+<img src="https://aka.doubaocdn.com/s/jwFrldilEx" width="100%" alt="Yixuan · 厨娘界元老, 书呆界新人 · 用更懒的方式过更好的人生">
 
 Hola，我是 **Yixuan**。原产地北京，世界居民。人生理想… 远目，那就是 **醉生梦死，不劳而获** 什么的。徐徐图之是必须的。当前主要活动就是窝在家做一只迷途小书虫，副业是创创业、编编程什么的。
 
