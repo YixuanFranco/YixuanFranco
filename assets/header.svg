@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 210" width="1300" height="210" role="img" aria-labelledby="t"><title id="t">Yixuan · 厨娘界元老, 书呆界新人 · 用更懒的方式过更好的人生</title><style>
-@keyframes duckFade{0%{opacity:.25}100%{opacity:1}}
+@keyframes walk{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 @keyframes shine{0%{transform:translateX(-300px)}100%{transform:translateX(1400px)}}
 @keyframes pulse{0%,100%{opacity:.3}50%{opacity:.9}}
-.duck{animation:duckFade 3s ease-in-out infinite alternate}
-.shine{animation:shine 5.5s cubic-bezier(.4,0,.2,1) infinite}
+.duck{animation:walk 2.8s ease-in-out infinite}
 .dot{animation:pulse 3s ease-in-out infinite}
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}
 </style>
@@ -12,10 +11,42 @@
 <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5EEAD4" stop-opacity="0"/><stop offset=".5" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></linearGradient>
 <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5EEAD4"/><stop offset=".5" stop-color="#2DD4BF"/><stop offset="1" stop-color="#34D399"/></linearGradient>
 <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2DD4BF" stop-opacity=".22"/><stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/></radialGradient>
+<linearGradient id="dbd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFDF5C"/><stop offset="1" stop-color="#F0B50A"/></linearGradient>
+<radialGradient id="dglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2DD4BF" stop-opacity=".25"/><stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="1300" height="210" fill="url(#bg)"/>
 <circle cx="650" cy="105" r="260" fill="url(#glow)"/>
-<g class="duck"><image href="data:image/jpeg;base64,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" x="20" y="15" width="250" height="250"/></g>
+<g transform="translate(8,4) scale(0.74)" class="duck">
+<circle cx="130" cy="120" r="115" fill="url(#dglow)"/>
+<circle cx="24" cy="36" r="4" fill="#2DD4BF" opacity=".5"/>
+<circle cx="236" cy="30" r="3" fill="#5EEAD4" opacity=".4"/>
+<circle cx="246" cy="112" r="4.5" fill="#2DD4BF" opacity=".35"/>
+<circle cx="16" cy="140" r="3" fill="#5EEAD4" opacity=".45"/>
+<circle cx="238" cy="200" r="3.5" fill="#2DD4BF" opacity=".4"/>
+<circle cx="26" cy="226" r="4" fill="#5EEAD4" opacity=".3"/>
+<path d="M 130 74 C 162 74 178 98 178 134 C 178 176 156 202 130 204 C 104 202 82 176 82 134 C 82 98 98 74 130 74 Z" fill="url(#dbd)"/>
+<path d="M 130 124 C 153 124 161 147 161 166 C 161 187 147 199 130 201 C 113 199 99 187 99 166 C 99 147 107 124 130 124 Z" fill="#FFF1B8" opacity=".85"/>
+<path d="M 84 118 C 62 118 40 112 30 104 C 30 96 40 92 50 96 C 62 101 74 108 84 116 Z" fill="#E8A020"/>
+<path d="M 78 114 C 64 110 50 104 42 100" stroke="#D97706" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".7"/>
+<path d="M 176 118 C 198 118 220 112 230 104 C 230 96 220 92 210 96 C 198 101 186 108 176 116 Z" fill="#E8A020"/>
+<path d="M 182 114 C 196 110 210 104 218 100" stroke="#D97706" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".7"/>
+<circle cx="104" cy="100" r="13" fill="#1F2937"/>
+<circle cx="156" cy="100" r="13" fill="#1F2937"/>
+<circle cx="108.5" cy="95" r="4.5" fill="#fff"/>
+<circle cx="160.5" cy="95" r="4.5" fill="#fff"/>
+<ellipse cx="86" cy="124" rx="7" ry="4.5" fill="#FB923C" opacity=".6"/>
+<ellipse cx="174" cy="124" rx="7" ry="4.5" fill="#FB923C" opacity=".6"/>
+<ellipse cx="130" cy="132" rx="25" ry="14" fill="#F97316"/>
+<path d="M 105 134 A 25 14 0 0 0 155 134 A 21 9 0 0 1 105 134" fill="#FB923C"/>
+<path d="M 130 126 L 130 140" stroke="#C2410C" stroke-width="1.8"/>
+<circle cx="122" cy="129" r="1.6" fill="#C2410C"/>
+<circle cx="138" cy="129" r="1.6" fill="#C2410C"/>
+<path d="M 126 76 C 125 70 121 66 117 60" stroke="#F59E0B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M 130 75 C 131 69 130 64 130 58" stroke="#F59E0B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M 134 76 C 135 70 139 66 143 60" stroke="#F59E0B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M 104 206 L 94 220 L 106 214 L 111 227 L 116 213 L 124 225 L 130 211 L 138 225 L 144 211 L 154 217 L 146 203 Z" fill="#F97316"/>
+<path d="M 115 197 L 108 206 L 117 202 L 121 210 L 126 200 L 132 209 L 137 200 L 143 206 L 139 195 Z" fill="#D97706" opacity=".7"/>
+</g>
 <text x="330" y="95" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="54" font-weight="700" fill="url(#txt)">Yixuan</text>
 <text x="330" y="130" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" fill="#A7F3D0" opacity=".9">厨娘界元老，书呆界新人 · 用更懒的方式过更好的人生</text>
 <text x="330" y="162" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="18" fill="#5EEAD4" opacity=".75">Hola, I'm Yixuan — indie creator, code tinkerer, life optimizer.</text>
