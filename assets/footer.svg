@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 110" width="1300" height="110" role="img" aria-labelledby="t"><title id="t">谢谢你来过 · Thanks for stopping by</title><style>@keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}@keyframes starSpin{0%,100%{transform:rotate(0)}50%{transform:rotate(180deg)}}.g{animation:glow 3s ease-in-out infinite}.ss{transform-box:fill-box;transform-origin:center;animation:starSpin 5s linear infinite}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#042F2E"/><stop offset=".5" stop-color="#0F172A"/><stop offset="1" stop-color="#042F2E"/></linearGradient>
+</defs>
+<rect width="1300" height="110" fill="url(#bg)"/>
+<text x="650" y="52" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="600" fill="#A7F3D0" class="g">如果这些项目帮到了你，一颗 star 就是最大的鼓励，谢谢你来过。</text>
+<text x="650" y="86" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#5EEAD4" opacity=".7">yixuan.li · 醉生梦死，不劳而获</text>
+<g class="ss"><path d="M650 0 L654 12 L666 12 L656 19 L660 30 L650 23 L640 30 L644 19 L634 12 L646 12Z" fill="#FACC15" opacity=".6" transform="translate(620 78)"/></g>
+</svg>
