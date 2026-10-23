@@ -1,0 +1,23 @@
+name: Generate header.png from SVG
+on:
+  push:
+    branches: [main]
+    paths: ['assets/header.svg', '.github/workflows/header-png.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin fonts-noto-cjk
+      - name: Render PNG
+        run: rsvg-convert -w 1300 -h 210 assets/header.svg -o assets/header.png
+      - name: Commit if changed
+        run: |
+          git config user.name "Yixuan Li"
+          git config user.email "liyixuan5402@gmail.com"
+          git add assets/header.png
+          git diff --cached --quiet || (git commit -m "build: render header.png from header.svg" && git push)
